@@ -52,7 +52,7 @@ while amount is None:
         amount = int(amount_input)
     except:
         try:
-            amount = float(amount_input)
+            amount = float(amount_input.replace(',','.'))
         except:
             amount = None
             amount_input = input(f"Попробуйте, пожалуйста, еще раз, для выхода из программы введите EXIT: ")
